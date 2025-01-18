@@ -1,13 +1,15 @@
 friends_network = { "Alice": {"Bob", "Charlie"}, "Bob": {"Alice", "David"}, "Charlie": {"Alice", "Eve"}, "David": {"Bob"}, "Eve": {"Charlie"} }
 
 def main():
-  choice = int(input("\n======Main Program======\n[1]Add a user\n[2]Find common friends\n[3]Expand network\nMake a selection: "))
+  choice = int(input("\n======Main Program======\n[1]Add a user\n[2]Find common friends\n[3]Expand network\n[4]Exit\nMake a selection: "))
   if choice == 1:
     add_user()
   elif choice == 2:
     common_friends()
   elif choice == 3:
     expand()
+  elif choice == 4:
+    print("See you later!")
   else:
     print("Wrong input, try again!")
     main()    
